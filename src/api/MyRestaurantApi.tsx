@@ -19,7 +19,7 @@ export const useGetMyRestaurant = () => {
     });
 
     if (!response.ok) {
-      throw new Error("Failed to get restaurant");
+      throw new Error("Failed to get my restaurant");
     }
     return response.json();
   };
