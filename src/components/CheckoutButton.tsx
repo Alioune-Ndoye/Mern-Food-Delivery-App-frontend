@@ -8,6 +8,11 @@ import UserProfileForm, {
 } from "@/forms/user-profile-form/UserProfileForm";
 import { useGetMyUser } from "@/api/MyUserApi";
 
+
+// Props for the CheckoutForm component
+// - onCheckout: function to handle submitting the user's form data
+// - disabled: boolean to indicate if the form should be disabled
+// - isLoading: boolean to indicate if a submission is in progress
 type Props = {
   onCheckout: (userFormData: UserFormData) => void;
   disabled: boolean;
