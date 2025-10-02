@@ -6,6 +6,9 @@ import { useNavigate } from "react-router-dom";
 const HomePage = () => {
   const navigate = useNavigate();
 
+  // Handles the search form submission.
+  // When the user submits a search query, this function
+  // navigates to the `/search/:query` route with the entered value.
   const handleSearchSubmit = (searchFormValues: SearchForm) => {
     navigate({
       pathname: `/search/${searchFormValues.searchQuery}`,
