@@ -36,10 +36,17 @@ const UsernameMenu = () => {
         <Separator />
         <DropdownMenuItem>
           <Button
-            onClick={() => logout()}
-            className="flex flex-1 font-bold bg-orange-500"
-          >
-            Log Out
+           onClick={() => {
+            console.log('Logout URL:', import.meta.env.VITE_AUTH0_LOGOUT_URL);
+            logout({
+              logoutParams: {
+                returnTo: window.location.origin ,
+              },
+            });
+          }}
+          className="flex flex-1 font-bold bg-orange-500"
+        >
+          Log Out
           </Button>
         </DropdownMenuItem>
       </DropdownMenuContent>

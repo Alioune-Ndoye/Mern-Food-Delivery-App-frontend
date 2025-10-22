@@ -24,7 +24,7 @@ const MobileNavLinks = () => {
       >
         User Profile
       </Link>
-     <Button
+      <Button
         onClick={() => {
           logout({
             logoutParams: {
