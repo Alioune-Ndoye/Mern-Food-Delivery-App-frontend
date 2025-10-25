@@ -5,7 +5,7 @@ const ProtectedRoute = () => {
   const { isAuthenticated, isLoading } = useAuth0();
 
   if (isLoading) {
-    return null;
+    return <div>Loading...</div>;
   }
 
   if (isAuthenticated) {
